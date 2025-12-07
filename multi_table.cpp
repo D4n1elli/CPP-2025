@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Made in 03/12/2025
+// Made in 03/12/2025, re-made in 07/12/2025
 
 int mainCode();
 
@@ -35,4 +35,5 @@ int mainCode(){
     }
     multi_table(n, s, e);
     return 1;
+
 }
