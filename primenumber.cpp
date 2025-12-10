@@ -12,10 +12,7 @@ bool isprime(int num){
     for(divisor; divisor > 1; divisor--){
         if(num % divisor == 0){return false;}
     }
-
-
-
-
+    
 }
 
 int main(){
@@ -32,4 +29,5 @@ int main(){
         else {cout << "Nah\n";}
     }
     cout << "Finishing...\n"; return 0;
+
 }
