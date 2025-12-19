@@ -25,17 +25,30 @@ bool is_triangular(int num){
     else{return false;}
 }
 
+// Checks if number is perfect square
+bool is_perfectsquare(int num){
+    if (num < 0){return false;}
+    for (int i = 0; i <= num; i++){
+        if (i*i == num){return true;}
+    }
+    return false;
+}
+
 // Makes the variables and prints it
 int checks_and_outputs(){
     int number = number_choose();
     bool prime = is_prime(number);
     bool triangular = is_triangular(number);
     bool positive; if (number > 0){positive = true;} else if (number < 0) {positive = false;}
+    bool even; if (number % 2 == 0){even = true;} else {even = false;}
+    bool perfect_square = is_perfectsquare(number);
 
 // Couts
     if(prime == true){cout << "Is prime\n";} else {cout << "Is not prime\n";}
     if(triangular == true){cout << "Is triangular\n";} else {cout << "Is not triangular\n";}
     if (number == 0){cout << "Is neutral\n";} else if(positive == true){cout << "Is positive\n";} else {cout << "Is negative\n";}
+    if(even == true){cout << "Is even\n";} else {cout << "Is odd\n";}   
+    if(perfect_square == true){cout << "Is a perfect square\n";} else {cout << "Is not a perfect square\n\n";}  
     return number;
 }
 
