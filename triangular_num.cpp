@@ -4,9 +4,7 @@ using namespace std;
 // Made in 18/12/2025
 
 bool is_triangular(int num){
-    for(int i = 1; i>= num; i++){
-        sum += i;
-    }
+
 }
 
 
